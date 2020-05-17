@@ -1,3 +1,42 @@
+@font-face {
+    font-family: Ngaan;
+    src: url(./font/I.Ngaan.ttf);
+}
+
 *{
-    color: gold;
+    font-family: 微軟正黑體;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 30px;
+}
+
+#logo span{
+    font-family: Ngaan;
+    font-size: 45px;
+    font-weight: 900px;
+}
+
+#nav{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+
+#nav a{
+    text-decoration: none;
+    transition-delay:0.3s;
+    color: red;
+    font-size: 20px;
+}
+
+#nav a:hover{
+    color: green;
+    font-size: 22px;
 }
