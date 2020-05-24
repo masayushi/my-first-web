@@ -109,3 +109,35 @@ section {
     background-position: center;
     height: 500px;
 }
+
+#about > div p {
+    line-height: 2;
+    letter-spacing: 5px;
+    padding-right: 20px;
+}
+
+section h1 {
+    font-family: Ngaan;
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+section hr {
+    margin-bottom: 40px;
+}
+
+#news ul {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    list-style: none;
+}
+
+#news ul span {
+    color:gray;
+    padding: 10px;
+}
+
+#news ul li {
+    font-size: 24px;
+    padding: 10px 0;
+}
