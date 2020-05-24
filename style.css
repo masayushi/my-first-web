@@ -60,8 +60,52 @@ nav{
 #banner {
     /* 100vh 意思是跟螢幕一樣的高度 100是100%的意思 */
    height: 100vh;
+   /* 背景大小：填滿 */
    background-size: cover;
    background-position: center;
    /* 背景圖片 */
    background-image: url(./img/ramensan.jpg);
+   display: grid;
+   color: white;
+   align-items: center;
+   text-align: center;
+}
+
+#banner div {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#banner div h1,#banner div h4 {
+    font-family:  Ngaan;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+#banner h1 {
+    font-size: 180px;
+}
+
+#banner h4 {
+    font-size: 40px;
+    text-align: left;
+}
+
+/* section */
+section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#about > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+}
+
+#about > div .img {
+    background-image: url(img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 }
