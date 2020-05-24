@@ -1,16 +1,25 @@
+<!-- 跟瀏覽器說明要使用HTML5 -->
 <!DOCTYPE html>
+<!-- 網頁元素 lang 語言 zh 繁中 -->
 <html lang="zh">
 
+<!-- 網頁資訊 -->
 <head>
+    <!-- 編碼 UTF-8 避免亂碼-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 標題：顯示於瀏覽器上方 -->
     <title>丸龜製麵</title>
     <!-- ./為根目錄 -->
+    <!-- rel 關係 stylesheet - CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- div為區塊元素，這樣的特性會讓他將文字向下擠，同時為無語意的元素 -->
+    <!-- 導覽列 -->
+    <!-- div是無語意的元素 -->
+    <!-- nav是有語意的元素 - SEO 搜尋引擎優化 -->
     <nav>
         <div id="logo">
             <span>丸龜製麵</span>
@@ -21,7 +30,16 @@
             <a href="">聯絡我們</a>
         </div>
     </nav>
-    <div id="banner"></div>
+    <!-- banner 橫幅 -->
+    <div id="banner">
+        <div>
+            <h4>夏季新品</h4>
+            <h1>烏龍冷麵</h1>
+        </div>
+    </div>
+
+    <!-- 文章 -->
+    <!-- 有語意的元素 -->
     <section>
         <h1>關於丸龜</h1>
         <p>丸亀製麵的起源：
