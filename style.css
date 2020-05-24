@@ -1,5 +1,7 @@
 @font-face {
+    /* 字型名稱 */
     font-family: Ngaan;
+    /* 字型來源 src 路徑 url */
     src: url(./font/I.Ngaan.ttf);
 }
 
@@ -9,11 +11,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* 導覽列 */
 nav{
     display: grid;
     grid-template-columns: 40% 60%;
-    padding: 30px;
+    padding: 30px 100px;
+    /* 定位：固定 */
+    position: fixed;
+    /* 上：0 bottom-->下 */
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+
 }
 
 #logo span{
@@ -25,25 +36,32 @@ nav{
 #nav{
     display: grid;
     align-items: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3,1fr);
+    /* 對齊項目(垂直) */
+    align-items: center;
     text-align: center;
 }
 
 #nav a{
+    /* 文字-裝飾 - 底線、刪除線 */
     text-decoration: none;
+    /* 轉場：轉場所耗費的時間 */
     transition-delay:0.3s;
     color: white;
     font-size: 20px;
 }
-
+/* :hover 滑入，即滑鼠移入時的效果 */
 #nav a:hover{
     color: red;
     font-size: 22px;
 }
-
+/* 橫幅 */
 #banner {
+    /* 100vh 意思是跟螢幕一樣的高度 100是100%的意思 */
    height: 100vh;
    background-size: cover;
    background-position: center;
+   /* 背景圖片 */
    background-image: url(./img/ramensan.jpg);
 }
