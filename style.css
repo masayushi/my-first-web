@@ -32,11 +32,18 @@ nav{
 #nav a{
     text-decoration: none;
     transition-delay:0.3s;
-    color: red;
+    color: white;
     font-size: 20px;
 }
 
 #nav a:hover{
-    color: green;
+    color: red;
     font-size: 22px;
+}
+
+#banner {
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-image: url(./img/ramensan.jpg);
 }
